@@ -30,12 +30,12 @@ walkInRes(function(){
 // wrong:- walkInRes(orderFood(havingLunch(payBill())));
 
 // right:-
-walkInRes(()=>{
-    orderFood(()=>{ 
-    }
-)
-    havingLunch(()=>{
+// walkInRes(()=>{
+//     orderFood(()=>{ 
+//     }
+// )
+//     havingLunch(()=>{
         
-    })
-    }
-})
+//     })
+//     }
+// })
