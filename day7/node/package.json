@@ -1,0 +1,11 @@
+{
+  "name": "demopackage",
+  "version": "1.0.0",
+  "description": "blah blah",
+  "main": "day7/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
