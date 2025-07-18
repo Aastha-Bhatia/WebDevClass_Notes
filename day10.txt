@@ -1,4 +1,4 @@
-// Today's topic- git & github
+// Today's topic- git, github and version control..
 
 import { version } from "react"
 
