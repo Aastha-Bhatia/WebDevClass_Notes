@@ -1,0 +1,37 @@
+// Today's topic- git
+
+import { version } from "react"
+
+What is Git?
+- version control 
+- Github 
+
+version- 1.0.0 (1-major, 0-minor, 0-patch&bump)
+fix, enhance 1.0.1, 1.0.2 (small fix..)
+eg. we implemented Ai, (chat bot).. (minor fix) 1.1.0 
+major fix.. 2.0.0 
+
+Change Set- a tool in Git 
+we can use for version controlling.
+
+
+Organization - 
+- multiple repos
+- add members
+- add collaboarators
+
+Individual -
+- single repo 
+
+
+- code quality, readability, scalability
+- documentation
+
+// code quality improve
+1. UBUNTU
+2. NODE 
+3. cd 
+4. cd backend 
+5. prettier
+6. lint 
+7. yarn tsc
