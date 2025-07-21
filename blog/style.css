@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(0, 0, 0, 0.923);
+    color: aliceblue;
+}
+#section1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aqua;
+    height: 2px;
+    width: 100%;
+    background-color: whitesmoke;
+}
