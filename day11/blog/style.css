@@ -1,12 +1,112 @@
-body{
-    background-color: rgba(0, 0, 0, 0.923);
-    color: aliceblue;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff5f7;
+  color: #2d3748;
 }
-#section1{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: aqua;
-    height: 2px;
-    width: 100%;
-    background-color: whitesmoke;
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.left-pane, .right-pane {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.left-pane h2, .right-pane h2 {
+  margin-top: 0;
+  color: #e53e3e;
+  font-size: 24px;
+}
+
+input, textarea {
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #f56565;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #c53030;
+}
+
+button {
+  background: #f56565;
+  color: white;
+  padding: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+  background: #fed7d7;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background: #c53030;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.post {
+  background: #fff0f1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: fadeIn 0.3s ease;
+}
+
+.post h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #d53f8c;
+}
+
+.post p {
+  margin: 0;
+  font-size: 14px;
+  color: #2d3748;
+}
+
+.post .timestamp {
+  text-align: right;
+  font-size: 12px;
+  color: #805ad5;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 20px;
+  }
 }

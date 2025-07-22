@@ -1,81 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Blog</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f0f0f0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-    .form {
-      max-width: 500px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    input, textarea, button {
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background: #5a67d8;
-      color: white;
-      cursor: pointer;
-    }
-    .posts {
-      margin-top: 30px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .post {
-      background: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    }
-    .post h2 {
-      margin: 0 0 10px;
-      color: #2d3748;
-    }
-    .post p {
-      margin: 0;
-      color: #4a5568;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>My Stylish Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>My Blog</h1>
-  <div class="form">
-    <input id="title" placeholder="Post Title">
-    <textarea id="content" rows="4" placeholder="Write something..."></textarea>
-    <button onclick="addPost()">Publish</button>
+  <div class="main-container">
+    <div class="left-pane">
+      <h2>✍️ Create New Post</h2>
+      <input id="title" placeholder="Post Title">
+      <textarea id="content" rows="6" placeholder="Write your thoughts..." oninput="checkFields()"></textarea>
+      <button id="publishBtn" onclick="addPost()" disabled>Publish</button>
+    </div>
+
+    <div class="right-pane">
+      <h2>📚 All Posts</h2>
+      <div class="posts" id="posts"></div>
+    </div>
   </div>
-  <div class="posts" id="posts"></div>
-  <script>
-    function addPost() {
-      const t = document.getElementById('title').value.trim();
-      const c = document.getElementById('content').value.trim();
-      if (t && c) {
-        const p = document.createElement('div');
-        p.className = 'post';
-        p.innerHTML = '<h2>' + t + '</h2><p>' + c + '</p>';
-        document.getElementById('posts').prepend(p);
-        document.getElementById('title').value = '';
-        document.getElementById('content').value = '';
-      }
-    }
-  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+Topic:- file system
+3 ways:-
+- promise
+- callback
+- synchronous
+
+POSIX- portable operating system interface..
+// unlink- used to delete a file..
